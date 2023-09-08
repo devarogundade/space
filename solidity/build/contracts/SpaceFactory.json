@@ -53,7 +53,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -160,7 +161,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -173,7 +175,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -192,7 +195,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -211,7 +215,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pluginManager_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"pluginManager2_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"metadata\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"dao\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"DAOCreated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"VERSION\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"subdomain\",\"type\":\"string\"}],\"name\":\"availability\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"daos\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"daosOf\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"metadata\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"subdomain\",\"type\":\"string\"},{\"internalType\":\"uint16\",\"name\":\"threshold\",\"type\":\"uint16\"},{\"internalType\":\"uint8\",\"name\":\"membership\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"incentives\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"tokenName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"tokenSymbol\",\"type\":\"string\"},{\"internalType\":\"address[]\",\"name\":\"holders\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"allocations\",\"type\":\"uint256[]\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"rewardURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"minVoting\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minPropose\",\"type\":\"uint256\"},{\"internalType\":\"uint64\",\"name\":\"minDuration\",\"type\":\"uint64\"},{\"internalType\":\"bool\",\"name\":\"earlyExecution\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"parentDao\",\"type\":\"address\"}],\"name\":\"deployDAO\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"subdomain\",\"type\":\"string\"}],\"name\":\"resolveName\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"V1.0 Space Factory - For PEGO Hackathon Author: Arogundade Ibrahim\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SpaceFactory.sol\":\"SpaceFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc980984badf3984b6303b377711220e067722bbd6a135b24669ff5069ef9f32\",\"dweb:/ipfs/QmPHXMSXj99XjSVM21YsY6aNtLLjLVXDbyN76J5HQYvvrz\"]},\"@openzeppelin/contracts/access/Ownable2Step.sol\":{\"keccak256\":\"0xde231558366826d7cb61725af8147965a61c53b77a352cc8c9af38fc5a92ac3c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fd55624076bf61d44af5ff351919e32dda748567acfbdd6ba3d6c7be61c758e\",\"dweb:/ipfs/QmSki4dTrf4GPm7MTpG3fk8mC7rnjwd2zMomLp6jLuF63Q\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee\",\"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu\"]},\"project:/contracts/Space.sol\":{\"keccak256\":\"0xe3459f0da8f94cc43687efcb0e20d68df903756b1ffbff8b58e3aa5a0e246022\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42bf19f6411d5e7e47fd886f7c4ce38bd6189aeef32e99674fd385f33ada4033\",\"dweb:/ipfs/QmdY45rSWeH5HasfgZnCmGLeexgQuMN7jR1DNg7TSmDDz5\"]},\"project:/contracts/SpaceFactory.sol\":{\"keccak256\":\"0x7fe598e547e850b9fbf95a551bb5f86cb9846eb6339df42edc74feaf44bad172\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6fb1a3c65d3142158189654f59688433bf3800eccb252ecd962fe665dcb1a03a\",\"dweb:/ipfs/QmZRnAq3dsMhhMT6ERcqfJ49Cznu7wfdRZ1W5rnhrt9dTy\"]},\"project:/contracts/SpaceGovernance.sol\":{\"keccak256\":\"0x54ca376a0fb4007ac4ca6a9d8c3798ccef7db1338b48299cf66986544d44a4c5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7cc727a958ed3bb2e906d46b9cd0882b88a14a0cc75a31cc43bc3e5cdb48f775\",\"dweb:/ipfs/QmePMr8h2MtToKVV9gE4Gbdyh5VXiy7K3KyTU5qmuoTewv\"]},\"project:/contracts/SpaceIncentives.sol\":{\"keccak256\":\"0x4e8b292ac55ce9311d06ec435abf9b04b157ca0ae2f901004ed5f3be35f96d87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5f706ce863188cd12dc51bbe2047df290c8e1a5426d0eedd5d1b4867c96506d\",\"dweb:/ipfs/QmXx6W8jX9S7eCBEfFMPapvzpaL5haPEurpRKaFo4SnqtC\"]},\"project:/contracts/SpaceMembership.sol\":{\"keccak256\":\"0xeab18beb6309ba6fcd42e3442ea06ec28c784ab1d70a944d2599171c7b4f6fa4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1acfca215c4e791c55a091075f2912545e554a26a7bda34cd29d35a2011702de\",\"dweb:/ipfs/QmNMAKN8cSihxyLbErEDvLCNJiisoeRdpnUtnnv3HTUg8A\"]},\"project:/contracts/SpaceTreasury.sol\":{\"keccak256\":\"0xb68da4e55ae8ac49fbd155edaea3ae2341306dc9180e81c77b64655ca20e8fc1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5ff29eefb107d5b0879de5bc58ce2cff5ab67a85f409c8e36d9f032ef0d42223\",\"dweb:/ipfs/QmTtd1EkDCBhZXCQ7MPdXLywiTvCSK8FfiJhrGszih64rJ\"]},\"project:/contracts/interfaces/IGovernance.sol\":{\"keccak256\":\"0x9a47d13a0e9c3e86361a1fa52ef8eb4a7bdaf98a123cb6a83b9c3311241e17dc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40882386028f288f4b8819e109f46324f14610e6552234f6e713473422a8e5d9\",\"dweb:/ipfs/QmXBorZwu9TDKJD2RALKCdN9PMpem8a9KuchEMcVhvVkRh\"]},\"project:/contracts/interfaces/IIncentives.sol\":{\"keccak256\":\"0x25bd2c37885c23317d070b226d308f000e8b93a8140a1002851538eff9fe48a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3cd4360131e7ac3d8df814fe8001d015634b7e930deb44df3586913fa64118e9\",\"dweb:/ipfs/QmY3yHxbiPCgRJz3zNDMHhuMgXfVgRfcabdxPnvMwd4MQx\"]},\"project:/contracts/interfaces/IMembership.sol\":{\"keccak256\":\"0x4873dc5c21817b21210507000d24c61a1f1b4e27b10d78ac911c2dc728bc3104\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://28f6e6ae404c8a9cf23642c53f9e59589e178ff19e07be3479e5047c460c405d\",\"dweb:/ipfs/QmdTsx69Lj2WmeK6V1tJPWrv2wqz73FEVXKbvY9zBUAfED\"]},\"project:/contracts/interfaces/IPlugin.sol\":{\"keccak256\":\"0xbea061bd02667390e32c588f05ad169c70c9fa6e07ac2c4b24b86add012c53d8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://04d8c20bd2dd8de7b096eda4d32bdadeac8ebf40a22d8dd9972ae7825b466465\",\"dweb:/ipfs/Qmab2U75kagktJMaw35WPkpm21z5sPkiAvX8urNucJB7nL\"]},\"project:/contracts/interfaces/IPluginManager.sol\":{\"keccak256\":\"0x917f1eab19be0974adeef753c38e704f31c819fd0578ffc3b7e7d3d2f964ea51\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5cc54edb7113e1dde70604df6ef5ebc69d92a60c1ee88cbad7ddcfa3f2c1b7d8\",\"dweb:/ipfs/QmenmFB3AaDENoJ3b4eJU4Kim2k3S8vwj4uZ2gAC95NVGs\"]},\"project:/contracts/interfaces/IPluginManager2.sol\":{\"keccak256\":\"0xbe3733b5e48884257caec3fc4a537154d20ccc478c6c6ac5b1beece4838ff8c8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e80e925f3ade1c416451f9e3f99e006117f49ab59afa8a4dac7a85e2a178c55b\",\"dweb:/ipfs/QmWHd6uAt3Hac8rnG9pSPMMTRuNUm54vRANeseuuuxLVmM\"]},\"project:/contracts/interfaces/ISpace.sol\":{\"keccak256\":\"0xf3f98da396cf601fc1427b20f56e66f794a642af7b4b4f7cd17651193541b303\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c5a57f6a9972e2989e430eb80383cce67e8caa1cce52a1c7d5d4122963c1c28\",\"dweb:/ipfs/QmPN3yTAsWZYYmxV8riAimrY1uDhMB5VxWMCqCvZmzFL3a\"]},\"project:/contracts/interfaces/ITreasury.sol\":{\"keccak256\":\"0x56c1535f6eddc3d087f1b1d07581cf8f8c9498b8a86a9aedf6770679b91dd5bc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fd2269dbf61f41f13ffc028e3aa1a10d37c64499ef99bbf08a7e9794f834912e\",\"dweb:/ipfs/Qmepawcb9WJTSvXGttzxxsofBVUtLdk4g5FTyrL75mHVaP\"]},\"project:/contracts/libraries/Enums.sol\":{\"keccak256\":\"0x913f54e4ab10e9381ae638e4e35c7971dea60b39f25dd44d5098cbe287c5080d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://782b78027d888bb2b60834c5dd4d2d8201c780e9e994aeeae0134af66188662d\",\"dweb:/ipfs/QmWzEskE9w2durLJV7XaPysLVJNojpqZ9XhfMDJBectFV2\"]},\"project:/contracts/libraries/Models.sol\":{\"keccak256\":\"0x0d11de4edd9cd251c8a29b7ea02b20566bdbc6c881ac15a21abeb77430ab085f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3692aa702b61ea7cc2d94c9aaed865aefb2a2fe3d17740c5d538903d5ca28af8\",\"dweb:/ipfs/QmTq8ozmpSP8KFBEz7bN7yyjWFi4Nkne8p5pFukE9NHNBf\"]},\"project:/contracts/libraries/PluginLib.sol\":{\"keccak256\":\"0xd521c806459bc3e42ee83a7c2d97521c1a1d006ee41f379a0f1001577387aee8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa15318c3d8bc2f1e27a1aadaf5322bd204e3a04c2f45c6d259c71a287120ee6\",\"dweb:/ipfs/QmPxhEkgzC9SJDyHMkr7CFnJC5f4gFhRzCM7GAjjtr9bJc\"]}},\"version\":1}",
@@ -4184,9 +4189,17 @@
     "name": "solc",
     "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "123456": {
+      "events": {},
+      "links": {},
+      "address": "0xc189e0F0cDC4023B392874f4a1B2797b44f21fe0",
+      "transactionHash": "0x2591943706c90c7430b0bb4f7f6e79b88cfd53aeb032a6de5eb62f789aa0e2b8"
+    }
+  },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-09-08T19:17:07.054Z",
+  "updatedAt": "2023-09-08T20:04:31.145Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

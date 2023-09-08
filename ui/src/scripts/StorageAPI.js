@@ -9,14 +9,14 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB1T4iKToAXhyA9EIJrDvxstZfntkLJNVg",
-    authDomain: "reflex-ddeba.firebaseapp.com",
-    projectId: "reflex-ddeba",
-    storageBucket: "reflex-ddeba.appspot.com",
-    messagingSenderId: "407511163875",
-    appId: "1:407511163875:web:1edb4355ebcf35537276d6",
-    measurementId: "G-4DKGY60RKY"
-  };
+    apiKey: "AIzaSyCCNlTEBSPgqoe5J1TsFljKfkJvxDwt7dw",
+    authDomain: "fleet-a6979.firebaseapp.com",
+    projectId: "fleet-a6979",
+    storageBucket: "fleet-a6979.appspot.com",
+    messagingSenderId: "1000201366682",
+    appId: "1:1000201366682:web:555a8af7080ee6638d0323",
+    measurementId: "G-MLM9X7SRV1"
+};
 
 const StorageAPI = {
     toBase64: function (file) {
