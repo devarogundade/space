@@ -1,0 +1,346 @@
+{
+  "contractName": "ITreasury",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "summary",
+          "type": "string"
+        }
+      ],
+      "name": "fundEVM",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "historyId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "onExecute",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "historyId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"summary\",\"type\":\"string\"}],\"name\":\"fundEVM\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"historyId\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"summary\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"}],\"name\":\"onExecute\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"historyId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITreasury.sol\":\"ITreasury\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"project:/contracts/interfaces/ITreasury.sol\":{\"keccak256\":\"0x56c1535f6eddc3d087f1b1d07581cf8f8c9498b8a86a9aedf6770679b91dd5bc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fd2269dbf61f41f13ffc028e3aa1a10d37c64499ef99bbf08a7e9794f834912e\",\"dweb:/ipfs/Qmepawcb9WJTSvXGttzxxsofBVUtLdk4g5FTyrL75mHVaP\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\ninterface ITreasury {\r\n    function fundEVM(\r\n        string memory summary\r\n    ) external payable returns (uint256 historyId);\r\n\r\n    function onExecute(\r\n        string memory summary,\r\n        uint256 amount,\r\n        address receiver\r\n    ) external returns (uint256 historyId);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\DELL\\Documents\\space\\solidity\\contracts\\interfaces\\ITreasury.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITreasury.sol",
+    "exportedSymbols": {
+      "ITreasury": [
+        7136
+      ]
+    },
+    "id": 7137,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7117,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:37"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITreasury",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7136,
+        "linearizedBaseContracts": [
+          7136
+        ],
+        "name": "ITreasury",
+        "nameLocation": "71:9:37",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "80bd542e",
+            "id": 7124,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fundEVM",
+            "nameLocation": "97:7:37",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7119,
+                  "mutability": "mutable",
+                  "name": "summary",
+                  "nameLocation": "129:7:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7124,
+                  "src": "115:21:37",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7118,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "115:6:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "104:39:37"
+            },
+            "returnParameters": {
+              "id": 7123,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7122,
+                  "mutability": "mutable",
+                  "name": "historyId",
+                  "nameLocation": "178:9:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7124,
+                  "src": "170:17:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7121,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:19:37"
+            },
+            "scope": 7136,
+            "src": "88:101:37",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "991e0b0b",
+            "id": 7135,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onExecute",
+            "nameLocation": "206:9:37",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7126,
+                  "mutability": "mutable",
+                  "name": "summary",
+                  "nameLocation": "240:7:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "226:21:37",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7125,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "226:6:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7128,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "266:6:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "258:14:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7127,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7130,
+                  "mutability": "mutable",
+                  "name": "receiver",
+                  "nameLocation": "291:8:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "283:16:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7129,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "215:91:37"
+            },
+            "returnParameters": {
+              "id": 7134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7133,
+                  "mutability": "mutable",
+                  "name": "historyId",
+                  "nameLocation": "333:9:37",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "325:17:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7132,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "325:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "324:19:37"
+            },
+            "scope": 7136,
+            "src": "197:147:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7137,
+        "src": "61:286:37",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:316:37"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-09-08T19:17:07.083Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

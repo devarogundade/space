@@ -1,0 +1,96 @@
+<template>
+    <section>
+        <div class="app-width">
+            <header>
+                <RouterLink v-if="$route.name == 'app-daos-dao'" :to="`/app/explore`">
+                    <img src="/images/logo.png" alt="" />
+                </RouterLink>    
+                <RouterLink v-else :to="`/app/daos/${$route.params.id}`">
+                    <img src="/images/logo.png" alt="" />
+                </RouterLink>
+                <div class="links">
+                    <RouterLink :class="$route.name == 'app-daos-dao' ? 'active' : ''" :to="`/app/daos/${$route.params.id}`">Overview</RouterLink>
+                    <RouterLink :class="$route.name.startsWith('app-daos-dao-governance') ? 'active' : ''" :to="`/app/daos/${$route.params.id}/governance`">Govenance</RouterLink>
+                    <RouterLink :class="$route.name.startsWith('app-daos-dao-members') ? 'active' : ''" :to="`/app/daos/${$route.params.id}/members`">Members</RouterLink>
+                    <RouterLink :class="$route.name.startsWith('app-daos-dao-treasury') ? 'active' : ''" :to="`/app/daos/${$route.params.id}/treasury`">Treasury</RouterLink>
+                    <RouterLink :class="$route.name.startsWith('app-daos-dao-incentives') ? 'active' : ''" :to="`/app/daos/${$route.params.id}/incentives`">Incentives</RouterLink>
+                    <RouterLink :class="$route.name.startsWith('app-daos-dao-settings') ? 'active' : ''" :to="`/app/daos/${$route.params.id}/settings`">Settings</RouterLink>
+                    <PrimaryButton v-if="userAddress" v-on:click="connectWallet()" :text="userAddress.substring(0, 4) + '•••' +
+                        userAddress.substring(userAddress.length - 4,
+                            userAddress.length)" :width="'200px'" />
+                    <PrimaryButton v-else v-on:click="connectWallet()" :text="'Connect Wallet'" :width="'200px'" />
+                </div>
+            </header>
+        </div>
+    </section>
+</template>
+
+<script setup>
+import PrimaryButton from './PrimaryButton.vue';
+</script>
+
+<script>
+import Authentication from '../scripts/Authentication';
+import { RouterLink } from 'vue-router';
+
+export default {
+    props: ["userAddress"],
+    methods: {
+        connectWallet: async function () {
+            Authentication.openModal();
+            this.getAddress();
+        },
+        getAddress: async function () {
+            await Authentication.userAddress((address) => {
+                this.$emit("connected", address);
+            });
+        }
+    },
+    mounted() {
+        this.getAddress();
+    },
+    components: { RouterLink }
+}
+</script>
+
+<style scoped>
+section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border: 2px transparent solid;
+    border-radius: 12px;
+}
+
+.active {
+    color: var(--primary) !important;
+    border: 2px var(--primary) solid !important;
+}
+</style>

@@ -1,0 +1,107 @@
+{
+  "contractName": "Enums",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libraries/Enums.sol\":\"Enums\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"project:/contracts/libraries/Enums.sol\":{\"keccak256\":\"0x913f54e4ab10e9381ae638e4e35c7971dea60b39f25dd44d5098cbe287c5080d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://782b78027d888bb2b60834c5dd4d2d8201c780e9e994aeeae0134af66188662d\",\"dweb:/ipfs/QmWzEskE9w2durLJV7XaPysLVJNojpqZ9XhfMDJBectFV2\"]}},\"version\":1}",
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212203a9bce8ec950bbba6ee58d35e079ba7bb3bbcf5f5b4ff9ac043d558289c8117964736f6c63430008110033",
+  "deployedBytecode": "0x600080fdfea26469706673582212203a9bce8ec950bbba6ee58d35e079ba7bb3bbcf5f5b4ff9ac043d558289c8117964736f6c63430008110033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "61:103:38:-:0;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:103:38:-:0;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\nlibrary Enums {\r\n\r\n    enum VoteEntry {\r\n        Agree,\r\n        Disagree,\r\n        Abstain\r\n    }\r\n\r\n}",
+  "sourcePath": "C:\\Users\\DELL\\Documents\\space\\solidity\\contracts\\libraries\\Enums.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/libraries/Enums.sol",
+    "exportedSymbols": {
+      "Enums": [
+        7143
+      ]
+    },
+    "id": 7144,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7138,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:38"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Enums",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 7143,
+        "linearizedBaseContracts": [
+          7143
+        ],
+        "name": "Enums",
+        "nameLocation": "69:5:38",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Enums.VoteEntry",
+            "id": 7142,
+            "members": [
+              {
+                "id": 7139,
+                "name": "Agree",
+                "nameLocation": "110:5:38",
+                "nodeType": "EnumValue",
+                "src": "110:5:38"
+              },
+              {
+                "id": 7140,
+                "name": "Disagree",
+                "nameLocation": "126:8:38",
+                "nodeType": "EnumValue",
+                "src": "126:8:38"
+              },
+              {
+                "id": 7141,
+                "name": "Abstain",
+                "nameLocation": "145:7:38",
+                "nodeType": "EnumValue",
+                "src": "145:7:38"
+              }
+            ],
+            "name": "VoteEntry",
+            "nameLocation": "89:9:38",
+            "nodeType": "EnumDefinition",
+            "src": "84:75:38"
+          }
+        ],
+        "scope": 7144,
+        "src": "61:103:38",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:131:38"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-09-08T19:17:07.084Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

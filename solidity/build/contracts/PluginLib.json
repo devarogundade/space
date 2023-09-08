@@ -1,0 +1,305 @@
+{
+  "contractName": "PluginLib",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "GOVERNANCE_CODE",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "INCENTIVES_CODE",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MEMBERSHIP_CODE",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TREASURY_CODE",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"GOVERNANCE_CODE\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"INCENTIVES_CODE\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MEMBERSHIP_CODE\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"TREASURY_CODE\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libraries/PluginLib.sol\":\"PluginLib\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"project:/contracts/libraries/PluginLib.sol\":{\"keccak256\":\"0xd521c806459bc3e42ee83a7c2d97521c1a1d006ee41f379a0f1001577387aee8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa15318c3d8bc2f1e27a1aadaf5322bd204e3a04c2f45c6d259c71a287120ee6\",\"dweb:/ipfs/QmPxhEkgzC9SJDyHMkr7CFnJC5f4gFhRzCM7GAjjtr9bJc\"]}},\"version\":1}",
+  "bytecode": "0x608080604052346100195760de908161001f823930815050f35b600080fdfe6080806040526004361015601257600080fd5b600090813560e01c908162c0de4014608e57508063010b9015146077578063d44d182b1460605763d8dbc26b14604757600080fd5b80600319360112605d5760206040516103e98152f35b80fd5b5080600319360112605d5760206040516103e88152f35b5080600319360112605d5760206040516103ea8152f35b90508160031936011260a457806103eb60209252f35b5080fdfea264697066735822122048c756970e88c6dca055817ca5b0be48fcdc6c00c58f320d922783b808b2102964736f6c63430008110033",
+  "deployedBytecode": "0x6080806040526004361015601257600080fd5b600090813560e01c908162c0de4014608e57508063010b9015146077578063d44d182b1460605763d8dbc26b14604757600080fd5b80600319360112605d5760206040516103e98152f35b80fd5b5080600319360112605d5760206040516103e88152f35b5080600319360112605d5760206040516103ea8152f35b90508160031936011260a457806103eb60209252f35b5080fdfea264697066735822122048c756970e88c6dca055817ca5b0be48fcdc6c00c58f320d922783b808b2102964736f6c63430008110033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "61:228:40:-:0;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:228:40:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;179:4;61:228;;;;;;;;;;;;;;;;;;;127:4;61:228;;;;;;;;;;;;;;;;229:4;61:228;;;;;;;;;;;;;;;281:4;61:228;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\nlibrary PluginLib {\r\n    uint64 public constant MEMBERSHIP_CODE = 1000;\r\n    uint64 public constant GOVERNANCE_CODE = 1001;\r\n    uint64 public constant TREASURY_CODE = 1002;\r\n    uint64 public constant INCENTIVES_CODE = 1003;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\DELL\\Documents\\space\\solidity\\contracts\\libraries\\PluginLib.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/libraries/PluginLib.sol",
+    "exportedSymbols": {
+      "PluginLib": [
+        7195
+      ]
+    },
+    "id": 7196,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7182,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:40"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PluginLib",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 7195,
+        "linearizedBaseContracts": [
+          7195
+        ],
+        "name": "PluginLib",
+        "nameLocation": "69:9:40",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "functionSelector": "d44d182b",
+            "id": 7185,
+            "mutability": "constant",
+            "name": "MEMBERSHIP_CODE",
+            "nameLocation": "109:15:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 7195,
+            "src": "86:45:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 7183,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:6:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "hexValue": "31303030",
+              "id": 7184,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "127:4:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000_by_1",
+                "typeString": "int_const 1000"
+              },
+              "value": "1000"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "functionSelector": "d8dbc26b",
+            "id": 7188,
+            "mutability": "constant",
+            "name": "GOVERNANCE_CODE",
+            "nameLocation": "161:15:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 7195,
+            "src": "138:45:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 7186,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "138:6:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "hexValue": "31303031",
+              "id": 7187,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "179:4:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1001_by_1",
+                "typeString": "int_const 1001"
+              },
+              "value": "1001"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "functionSelector": "010b9015",
+            "id": 7191,
+            "mutability": "constant",
+            "name": "TREASURY_CODE",
+            "nameLocation": "213:13:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 7195,
+            "src": "190:43:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 7189,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "190:6:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "hexValue": "31303032",
+              "id": 7190,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "229:4:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1002_by_1",
+                "typeString": "int_const 1002"
+              },
+              "value": "1002"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "functionSelector": "00c0de40",
+            "id": 7194,
+            "mutability": "constant",
+            "name": "INCENTIVES_CODE",
+            "nameLocation": "263:15:40",
+            "nodeType": "VariableDeclaration",
+            "scope": 7195,
+            "src": "240:45:40",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 7192,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "240:6:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "hexValue": "31303033",
+              "id": 7193,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "281:4:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1003_by_1",
+                "typeString": "int_const 1003"
+              },
+              "value": "1003"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 7196,
+        "src": "61:228:40",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:258:40"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-09-08T19:17:07.088Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
