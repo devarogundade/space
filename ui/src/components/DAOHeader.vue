@@ -3,10 +3,10 @@
         <div class="app-width">
             <header>
                 <RouterLink v-if="$route.name == 'app-daos-dao'" :to="`/app/explore`">
-                    <img src="/images/logo.png" alt="" />
+                    <SpaceLogo />
                 </RouterLink>    
                 <RouterLink v-else :to="`/app/daos/${$route.params.id}`">
-                    <img src="/images/logo.png" alt="" />
+                    <SpaceLogo />
                 </RouterLink>
                 <div class="links">
                     <RouterLink :class="$route.name == 'app-daos-dao' ? 'active' : ''" :to="`/app/daos/${$route.params.id}`">Overview</RouterLink>
@@ -27,11 +27,11 @@
 
 <script setup>
 import PrimaryButton from './PrimaryButton.vue';
+import SpaceLogo from './icons/SpaceLogo.vue';
 </script>
 
 <script>
 import Authentication from '../scripts/Authentication';
-import { RouterLink } from 'vue-router';
 
 export default {
     props: ["userAddress"],
@@ -48,8 +48,7 @@ export default {
     },
     mounted() {
         this.getAddress();
-    },
-    components: { RouterLink }
+    }
 }
 </script>
 
@@ -68,10 +67,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-header img {
-    height: 50px;
 }
 
 .links {

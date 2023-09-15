@@ -3,7 +3,7 @@
         <div class="app-width">
             <header>
                 <RouterLink to="/">
-                    <img src="/images/logo.png" alt="" />
+                    <SpaceLogo />
                 </RouterLink>
                 <div class="links">
                     <a href="">Docs</a>
@@ -20,6 +20,7 @@
 
 <script setup>
 import PrimaryButton from './PrimaryButton.vue';
+import SpaceLogo from './icons/SpaceLogo.vue';
 </script>
 
 <style scoped>
