@@ -150,14 +150,14 @@ section {
     color: #fff;
     margin-bottom: 40px;
     font-weight: 700;
-    text-shadow: 0 0 50px #ed4f3348, 0 0 26px #ed4f336c;
+    text-shadow: 0 0 50px #ac640648, 0 0 26px #ac64066c;
 }
 
 .input {
     width: 1000px;
     max-width: 100%;
     height: 60px;
-    border: 1px solid #ed4f336c;
+    border: 1px solid #ac64066c;
     border-radius: 12px;
     background-color: rgb(23 25 28 / 1);
 }
