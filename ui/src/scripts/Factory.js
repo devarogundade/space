@@ -3,7 +3,7 @@ import Converter from './Converter'
 import { readContract, prepareWriteContract, writeContract, waitForTransaction } from '@wagmi/core'
 
 const Factory = {
-    address: SpaceFactoryABI.networks[123456].address,
+    address: SpaceFactoryABI.networks[20201022].address,
 
     deploy: async function (metadata, holders, allocations, dao) {
         try {

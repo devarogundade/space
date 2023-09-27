@@ -1,10 +1,10 @@
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/html'
 import { configureChains, createClient } from '@wagmi/core'
-import { pegoTestnet, pego } from './PegoChain'
+import { pego } from './PegoChain'
  
 const PROJECT_ID = import.meta.env.VITE_PROJECT_ID
-const chains = [pegoTestnet, pego]
+const chains = [pego]
 
 const Authentication = {
     web3modal: null,
@@ -39,7 +39,7 @@ const Authentication = {
             if (!this.web3modal) {
                 this.web3modal = new Web3Modal({ projectId: PROJECT_ID }, ethereumClient)
 
-                this.web3modal.setDefaultChain(pegoTestnet)
+                this.web3modal.setDefaultChain(pego)
                 this.web3modal.setTheme({
                     themeMode: 'dark'
                 })

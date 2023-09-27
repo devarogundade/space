@@ -18,7 +18,7 @@ module.exports = {
       networkCheckTimeout: 999999999
     },
 
-    testnet2: {
+    mainnet: {
       provider: () => new HDWalletProvider(MNEMONIC, 'https://pegorpc.com'),
       network_id: 20201022,
       confirmations: 2,
