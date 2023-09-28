@@ -55,6 +55,7 @@
 <script setup>
 import ProgressView from './ProgressView.vue'
 import IconBox from './icons/IconBox.vue'
+import IconClock from './icons/IconClock.vue'
 </script>
 
 <script>
