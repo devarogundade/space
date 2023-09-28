@@ -178,7 +178,7 @@ export default {
                     description: "You have successfully addedd a new member.",
                     type: "success",
                     linkTitle: "View Trx",
-                    linkUrl: `https://testnet.escan.live/tx/${trx.transactionHash}`
+                    linkUrl: `https://scan.pego.network/tx/${trx.transactionHash}`
                 });
             }
             else {
@@ -209,7 +209,7 @@ export default {
                     description: "You have successfully addedd a new member.",
                     type: "success",
                     linkTitle: "View Trx",
-                    linkUrl: `https://testnet.escan.live/tx/${trx.transactionHash}`
+                    linkUrl: `https://scan.pego.network/tx/${trx.transactionHash}`
                 });
             }
             else {

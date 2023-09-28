@@ -24,7 +24,7 @@
                             <img src="/images/user.jpg" alt="">
                             <p>{{ reward }}</p>
                         </div>
-                        <a :href="`https://testnet.escan.live/address/${i}`" target="_blank">
+                        <a :href="`https://scan.pego.network/address/${i}`" target="_blank">
                             <div class="member_link">
                                 <p>1 reward</p>
                             </div>

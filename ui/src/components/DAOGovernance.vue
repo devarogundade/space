@@ -31,7 +31,7 @@
                                 <h3>{{ JSON.parse(proposal.metadata).title }}</h3>
                                 <p class="desc">{{ JSON.parse(proposal.metadata).summary }}</p>
                                 <p class="published">Created by <a
-                                        :href="`https://testnet.escan.live/address/${proposal.creator}`">{{
+                                        :href="`https://scan.pego.network/address/${proposal.creator}`">{{
                                             $shortAddress(proposal.creator)
                                         }}
                                     </a> on {{ $toDate(proposal.createdOn) }}</p>

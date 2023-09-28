@@ -23,7 +23,7 @@
                             <img src="/images/user.jpg" alt="">
                             <p>{{ member }}</p>
                         </div>
-                        <a :href="`https://testnet.escan.live/address/${member}`" target="_blank">
+                        <a :href="`https://scan.pego.network/address/${member}`" target="_blank">
                             <div class="member_link">
                                 <p>{{ $fromWei(allocations[i]) }}</p>
                                 <IconOut />

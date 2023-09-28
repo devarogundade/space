@@ -29,10 +29,10 @@
                             <p class="desc">{{ data.summary }}</p>
                             <h3 class="amount">{{ $fromWei(data.amount) }} PG</h3>
                             <p class="published" v-if="data.direction == 0">From <a target="_blank"
-                                    :href="`https://testnet.escan.live/address/${data.from}`">{{ $shortAddress(data.from)
+                                    :href="`https://scan.pego.network/address/${data.from}`">{{ $shortAddress(data.from)
                                     }}</a></p>
                             <p class="published" v-if="data.direction == 1">TO <a target="_blank"
-                                    :href="`https://testnet.escan.live/address/${data.to}`">{{ $shortAddress(data.to) }}</a>
+                                    :href="`https://scan.pego.network/address/${data.to}`">{{ $shortAddress(data.to) }}</a>
                             </p>
                         </div>
                     </div>

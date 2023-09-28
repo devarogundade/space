@@ -73,7 +73,7 @@
                                     <h3>{{ JSON.parse(proposal.metadata).title }}</h3>
                                     <p class="desc">{{ JSON.parse(proposal.metadata).summary }}</p>
                                     <p class="published">Created by <a target="_blank"
-                                            :href="`https://testnet.escan.live/address/${proposal.creator}`">{{
+                                            :href="`https://scan.pego.network/address/${proposal.creator}`">{{
                                                 $shortAddress(proposal.creator)
                                             }}
                                         </a> on {{ $toDate(proposal.createdOn) }}</p>
@@ -147,7 +147,7 @@
                                 <img src="/images/user.jpg" alt="">
                                 <p>{{ $shortAddress(member) }}</p>
                             </div>
-                            <a :href="`https://testnet.escan.live/address/${member}`" target="_blank">
+                            <a :href="`https://scan.pego.network/address/${member}`" target="_blank">
                                 <div class="member_link">
                                     <p>{{ $fromWei(allocations[i]) }}</p>
                                     <IconOut :color="'var(--primary)'" />

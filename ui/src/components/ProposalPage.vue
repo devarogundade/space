@@ -5,7 +5,7 @@
             <div class="proposal_container">
                 <div class="title">
                     <h3>{{ JSON.parse(proposal.metadata).title }}</h3>
-                    <p class="published">Created by <a :href="`https://testnet.escan.live/address/${proposal.creator}`"
+                    <p class="published">Created by <a :href="`https://scan.pego.network/address/${proposal.creator}`"
                             target="_blank">{{ $shortAddress(proposal.creator) }}</a></p>
                     <p class="summary">{{ JSON.parse(proposal.metadata).summary }}</p>
                     <br>
@@ -195,7 +195,7 @@ export default {
                     description: "You have successfully execute this proposal.",
                     type: "success",
                     linkTitle: "View Trx",
-                    linkUrl: `https://testnet.escan.live/tx/${trx.transactionHash}`
+                    linkUrl: `https://scan.pego.network/tx/${trx.transactionHash}`
                 });
             }
             else {
@@ -220,7 +220,7 @@ export default {
                     description: "You have successfully voted to this proposal.",
                     type: "success",
                     linkTitle: "View Trx",
-                    linkUrl: `https://testnet.escan.live/tx/${trx.transactionHash}`
+                    linkUrl: `https://scan.pego.network/tx/${trx.transactionHash}`
                 });
             }
             else {
