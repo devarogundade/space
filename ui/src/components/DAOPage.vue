@@ -26,7 +26,7 @@
                         </div>
                         <div class="option">
                             <IconBoxTick :color="'var(--primary)'" />
-                            <p>PEGO testnet chain</p>
+                            <p>PEGO chain</p>
                         </div>
                         <div class="option">
                             <IconPeople :color="'var(--primary)'" />
