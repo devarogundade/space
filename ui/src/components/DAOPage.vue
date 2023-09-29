@@ -8,7 +8,7 @@
                         <h1>{{ JSON.parse(dao[0]).name }}</h1>
                         <p class="domain">{{ JSON.parse(dao[0]).subdomain }}.space.pg</p>
                         <div class="link">
-                            <p>{{ `https://spacedao.netlify.app/app/daos/${$route.params.id}` }}</p>
+                            <p>{{ `https://spacedao.online/app/daos/${$route.params.id}` }}</p>
                             <IconCopy :color="'var(--primary)'" />
                         </div>
                         <p class="detail_head_text_desc">{{ JSON.parse(dao[0]).summary }}</p>
